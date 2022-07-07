@@ -1,0 +1,114 @@
+.services {
+  background-color: #edf3f8;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.services__item {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__item::before {
+  display: block;
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../../img/money.png);
+  background-repeat: no-repeat;
+  margin-bottom: 32px;
+}
+
+.services__item:nth-child( 2 )::before {
+  display: block;
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../../img/before.png);
+  background-repeat: no-repeat;
+  margin-bottom: 32px;
+}
+
+.services__item:nth-child( 3 )::before {
+  display: block;
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../../img/beforeone.png);
+  background-repeat: no-repeat;
+  margin-bottom: 32px;
+}
+
+.services__item::before {
+  display: block;
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../../img/money.png);
+  background-repeat: no-repeat;
+  margin-bottom: 32px;
+}
+
+
+.services__item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.138462px;
+  color: #36536b;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.services__item-text {
+  max-width: 350px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #6c8294;
+  margin: 0;
+}
+
+@include breakpoint-down($screen-size: 1075px) {
+
+  .services__list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+  }
+
+  .services__item-text {
+    width: 223px;
+  }
+}
+
+@include breakpoint-down($screen-size: 720px) {
+
+  .services__list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services__item-text {
+    width: 223px;
+  }
+
+  .services__item {
+    margin-top: 50px;
+  }
+
+}

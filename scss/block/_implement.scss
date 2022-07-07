@@ -1,0 +1,121 @@
+.implement {
+  background-color: #edf3f8;
+}
+
+.implement__box {
+  display: flex;
+  padding-top: 150px;
+  align-items: center;
+}
+
+.implement__box-img {
+  width: 445px;
+  height: 285px;
+  margin-right: 125px;
+}
+
+.implement__box-title {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.implement__box-text {
+  max-width: 445px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+  margin: 0;
+}
+
+
+@include breakpoint-down($screen-size: 1000px) {
+   
+  .implement__box-img {
+    width: 391px;
+    height: 250px;
+    margin-right: 125px;
+  }
+
+}
+
+@include breakpoint-down($screen-size: 950px) {
+   
+  .implement__box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+
+  .implement__box-img {
+    width: 391px;
+    height: 250px;
+    margin-right: 0px;
+  }
+
+  .implement__box-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+  .implement__box-text {
+    max-width: 573px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+@include breakpoint-down($screen-size: 615px) {
+
+  .implement__box {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .implement__box-img {
+    width: 328px;
+    height: 209px;
+    margin-right: 0px;
+  }
+
+  .implement__box-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+  .implement__box-text {
+    max-width: 328px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint-down($screen-size: 350px) {
+
+  .implement__box-img {
+    width: 300px;
+    height: 209px;
+    margin-right: 0px;
+  }
+}
